@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Константин Кушнир](https://up.htmlacademy.ru/htmlcss/36/user/2269133).
-* Наставник: `Неизвестно`.
+- Студент: [Константин Кушнир](https://up.htmlacademy.ru/htmlcss/36/user/2269133).
+- Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
