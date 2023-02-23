@@ -519,9 +519,9 @@ body {
 }
 
 .catalog-hotel-card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   width: 1060px;
   list-style-type: none;
   margin: 0 auto;
@@ -529,8 +529,17 @@ body {
 }
 
 .hotel-card {
+  display: grid;
+  grid-template-columns: 20px 140px 20px 140px 20px;
+  row-gap: 16px;
   width: 300px;
-  padding: 20px;
+  padding: 0;
+}
+
+.hotel-card-link {
+  padding-top: 20px;
+  grid-column-start: 2;
+  grid-column-end: 5;
 }
 
 .hotel-card-title {
@@ -541,13 +550,28 @@ body {
 }
 
 .hotel-price {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
 }
 
+.motel {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 .hotel-card-button {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -555,9 +579,15 @@ body {
   text-align: center;
   background-color: #756157;
   text-decoration: none;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .hotel-card-button-blue {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -565,9 +595,15 @@ body {
   text-align: center;
   background-color: #82B3D3;
   text-decoration: none;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .hotel-card-button-on {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -575,9 +611,15 @@ body {
   text-align: center;
   background-color: #7DB54F;
   text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 4px;
 }
 
 .hotel-card-rating {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -585,6 +627,8 @@ body {
   text-align: center;
   background-color: #F2F2F2;
   text-decoration: none;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .pagination-conteiner {
