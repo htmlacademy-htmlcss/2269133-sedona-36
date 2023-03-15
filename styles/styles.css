@@ -444,6 +444,30 @@ body {
   padding-left: 20px;
 }
 
+.newsletter-field:hover {
+  background-color: rgba(230, 230, 230, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-field:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.newsletter-field:active {
+  background-color: rgba(242, 242, 242, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-field:disabled {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-field::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+
 .newsletter-button {
   font-family: inherit;
   width: 232px;
@@ -822,6 +846,22 @@ body {
   box-sizing: border-box;
 }
 
+.range-input:hover {
+  background-color: #E6E6E6;
+}
+
+.range-input:focus {
+  border: 3px solid #68A2CA;
+}
+
+.range-input:active {
+  border: 2px solid #000000;
+}
+
+.range-input:disabled {
+  color: #E5E5E5;
+}
+
 .range-input-left {
   border-radius: 4px 0 0 4px;
 }
@@ -830,10 +870,14 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
+.range-input[type="number"]::-webkit-outer-spin-button,
+.range-input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range-input[type="number"] {
+  appearance: textfield;
 }
 
 .range-input-scale {
@@ -972,6 +1016,22 @@ body {
   background-position: right 18px center;
   appearance: none;
   margin-right: 70px;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  color: #E5E5E5;
 }
 
 .sorting-icons {
@@ -1319,6 +1379,24 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: rgba(230, 230, 230, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-button:disabled {
+  color: rgba(0, 0, 0, 0.1);
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1466,6 +1544,34 @@ body {
   border: none;
   background-color: #F2F2F2;
   border-radius: 4px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.arrival-date-input:hover {
+  background-color: rgba(230, 230, 230, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.arrival-date-input:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.arrival-date-input:active {
+  background-color: rgba(242, 242, 242, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.arrival-date-input:disabled {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.arrival-date-input::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.arrival-icon {
+  transform: translate(539px, -32px);
 }
 
 .signature-input {
@@ -1506,10 +1612,14 @@ body {
   background-color: #F2F2F2;
 }
 
-.input-number::-webkit-outer-spin-button,
-.input-number::-webkit-inner-spin-button {
+.input-number[type="number"]::-webkit-outer-spin-button,
+.input-number[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.input-number[type="number"] {
+  appearance: textfield;
 }
 
 .button-number {
@@ -1556,4 +1666,21 @@ body {
   border-radius: 10px;
   text-transform: uppercase;
   grid-column: 1/5;
+}
+
+.button-search:hover {
+  background-color: #68A2CA;
+}
+
+.button-search:focus {
+  background-color: #68A2CA;
+}
+
+.button-search:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.button-search:disabled {
+  color: rgba(255, 255, 255, 0.1);
 }
