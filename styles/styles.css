@@ -27,7 +27,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: black;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {
@@ -47,7 +47,7 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 24px;
+  box-shadow: 0 0 15px;
 }
 
 .header {
@@ -67,6 +67,7 @@ body {
 
 .logo {
   width: 140px;
+  z-index: 1;
 }
 
 .logo-sedona {
@@ -348,10 +349,6 @@ body {
   margin: 0;
 }
 
-.background-grey {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
 .container-interest {
   margin: 95px 304px;
 }
@@ -445,17 +442,17 @@ body {
 }
 
 .newsletter-field:hover {
-  background-color: rgba(230, 230, 230, 0.1);
+  background-color: rgba(230, 230, 230, 1);
   color: rgba(0, 0, 0, 0.1);
 }
 
 .newsletter-field:focus {
   background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .newsletter-field:active {
-  background-color: rgba(242, 242, 242, 0.1);
+  background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 0.1);
 }
 
@@ -626,7 +623,7 @@ body {
 
 .section-images {
   background-image: url("../images/blurred-mountains.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #7a2f2f;
   color: #ffffff;
@@ -730,18 +727,24 @@ body {
   border-radius: 4px;
 }
 
-.facilities-mark:hover {
+
+
+.facilities-input:hover + span {
   background-color: rgba(255, 255, 255, 0.3);
   background-image: rgba(63, 94, 114, 1);
 }
 
-.facilities-mark:focus {
-  border: 3px solid #83B3D3;
+.facilities-input:focus + span {
+  outline: 3px solid #83B3D3;
 }
 
-.facilities-mark:active {
+.facilities-input:active + span {
   background-color: rgba(255, 255, 255, 0.5);
   background-image: rgba(63, 94, 114, 1);
+}
+
+.facilities-input:disabled + span {
+  color: #E5E5E5;
 }
 
 .facilities-input[type="checkbox"]:checked + .facilities-mark::before,
@@ -807,11 +810,11 @@ body {
 }
 
 .range-toggle:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .range-toggle:active {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .toggle-min {
@@ -851,11 +854,11 @@ body {
 }
 
 .range-input:focus {
-  border: 3px solid #68A2CA;
+  outline: 3px solid #68A2CA;
 }
 
 .range-input:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .range-input:disabled {
@@ -1324,6 +1327,23 @@ body {
   background-color: #F2F2F2;
   text-decoration: none;
 }
+
+.pagination-current:hover {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:focus {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:active {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:disabled {
+  background-color: #F2F2F2;
+}
+
 
 .pagination-white {
   color: #000000;
